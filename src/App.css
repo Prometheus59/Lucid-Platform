@@ -3,8 +3,12 @@
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
+  -webkit-animation: App-logo-animate 7s linear forwards;
   height: 40vmin;
+}
+
+.path {
+  -webkit-stroke-dasharray: 1000;
 }
 
 .App-header {
@@ -12,7 +16,7 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center;  
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
@@ -22,11 +26,8 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
+@-webkit-keyframes App-logo-animate {
   to {
-    transform: rotate(360deg);
+    -webkit-stroke-dashoffset: 1000;
   }
 }
