@@ -13,9 +13,8 @@ class App extends Component {
           <div className="intro">
             <img src={logo} className="App-logo" id="path" alt="logo" />
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint a
-              corrupti possimus magni ut repellat neque explicabo, fuga autem
-              labore?
+              Welcome to the platform that will help you to expand your dreaming
+              horizons
             </p>
             <Link smooth to="#mainpage" className="App-link">
               Enter
