@@ -1,14 +1,23 @@
 #mainpage {
     padding-top: 30vh;
     padding-bottom: 30vh;
+    width: 100%;
 }
 
 .sections {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
+}
+
+.left-media-card {
+    align-self: flex-start;
+    margin-left: 25%;
+}
+
+.right-media-card {
+    align-self: flex-end;
+    margin-right: 25%;
 }
 
 .box {
