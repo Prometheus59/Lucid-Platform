@@ -1,39 +1,39 @@
 #mainpage {
-    padding-top: 30vh;
-    padding-bottom: 30vh;
-    width: 100%;
+  padding-top: 30vh;
+  padding-bottom: 30vh;
+  width: 100%;
 }
 
 .sections {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .left-media-card {
-    align-self: flex-start;
-    margin-left: 25%;
+  align-self: flex-start;
+  margin-left: 20%;
 }
 
 .right-media-card {
-    align-self: flex-end;
-    margin-right: 25%;
+  align-self: flex-end;
+  margin-right: 20%;
 }
 
 .box {
-    border: 4px solid #7C7C7C;
-    background-color: #282c34;
-    
-    color: white;
-    font-size: 100%;
-    padding: 3em;
-    margin: 5px;
-    transition-duration: 0.4s;
-    width: 15em;
-    height: auto;
-    text-align: center;
+  border: 4px solid #7c7c7c;
+  background-color: #282c34;
+
+  color: white;
+  font-size: 100%;
+  padding: 3em;
+  margin: 5px;
+  transition-duration: 0.4s;
+  width: 15em;
+  height: auto;
+  text-align: center;
 }
-    
+
 .box:hover {
-    background-color: #818181;
-  }
+  background-color: #818181;
+}
