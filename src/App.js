@@ -1,30 +1,46 @@
 import React, { Component } from "react";
-import logo from "./images/moon.svg";
 import "./App.css";
-import { HashLink as Link } from "react-router-hash-link";
-import { HashRouter } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Mainpage from "./Mainpage/Mainpage";
 import Navigation from "./Components/Navigation.js";
+import News from "./News/News";
+import Resources from "./Resources/Resources";
+import Community from "./Community/Community";
+import Journal from "./JournalPage/JournalPage";
 
 class App extends Component {
+  componentDidMount() {
+    var x = document.getElementById("init");
+    //x.innerHTML = <Mainpage />
+  }
+
   render() {
     return (
-      <HashRouter>
+      <Router>
         <div className="App">
           <Navigation />
-          <div className="intro">
-            <img src={logo} className="App-logo" id="path" alt="logo" />
-            <p>
-              Expand your dreaming horizons
-            </p>
-            <Link smooth to="#mainpage" className="App-link">
-              Enter
-            </Link>
+          <div id="init">
           </div>
-          <Mainpage />
+          <Switch>
+            <Route path="/welcome">
+              <Mainpage />
+            </Route>
+            <Route path="/journal">
+              <Journal />
+            </Route>
+            <Route path="/news">
+              <News />
+            </Route>
+            <Route path="/resources">
+              <Resources />
+            </Route>
+            <Route path="/community">
+              <Community />
+            </Route>
+          </Switch>
           <footer />
         </div>
-      </HashRouter>
+      </Router>
     );
   }
 }

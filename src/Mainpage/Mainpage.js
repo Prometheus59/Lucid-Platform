@@ -1,12 +1,22 @@
 import React from "react";
 import MediaCard from "../Components/MediaCard";
+import logo from "../images/moon.svg";
 import "./Mainpage.css";
+import Link from "react-router-hash-link";
+
 
 class Mainpage extends React.Component {
   render() {
     return (
-      <div id="mainpage">
-        <div className="sections">
+      <div>
+        <div className="intro">
+          <img src={logo} className="App-logo" id="path" alt="logo" />
+          <p>Expand your dreaming horizons</p>
+          <Link smooth to="#mainpage" className="App-link">
+            Enter
+          </Link>
+        </div>
+        <div className="sections" id="mainpage">
           <div className="left-media-card">
             <MediaCard
               title={"Article 1"}
